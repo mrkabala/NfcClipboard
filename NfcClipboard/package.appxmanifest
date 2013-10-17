@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="60214GeniusPath.NFCClipboard" Version="1.0.0.2" Publisher="CN=DA3D6C23-AA11-4AB6-8802-4E9BE36CAE09" />
+  <Properties>
+    <DisplayName>NFC Clipboard</DisplayName>
+    <PublisherDisplayName>Genius Path</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="NFC Clipboard" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Copies text from a NFC tag to the clipboard." ForegroundText="dark" BackgroundColor="#00A2E8">
+        <DefaultTile ShowName="allLogos" ShortName="NFC Clipboard" />
+        <SplashScreen Image="images\splashscreen.png" />
+        <InitialRotationPreference>
+          <Rotation Preference="portrait" />
+          <Rotation Preference="landscape" />
+          <Rotation Preference="portraitFlipped" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <DeviceCapability Name="proximity" />
+  </Capabilities>
+</Package>
